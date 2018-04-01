@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<title>Recognition Result</title>
+<p>The image you uploaded : {{ filename }}</p>
+<img src="{{ file_url }}">
+<p>Its recognition result : {{ result }}</p>
+<p>Do you want to <a href="{{ url_for('upload_file') }}">try again</a>?

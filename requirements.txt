@@ -1,0 +1,5 @@
+Flask
+Flask-Uploads
+opencv-python
+tensorflow
+cassandra-driver

@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/cqy/deep_model_variable/model.ckpt"
+all_model_checkpoint_paths: "/home/cqy/deep_model_variable/model.ckpt"
