@@ -6,8 +6,8 @@
 
 - 用Python结合[mnist_deep.py](https://github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/mnist/mnist_deep.py)代码实现数字识别功能，该步的目标应为写好一个数字识别函数，使得输入一张图片后该函数就能快速返回一预测数值。
 
-	> 注意：
-	1、此步中对输入图片的读取以及返回预测值是最基本的，我认为还需要做到的是对模型参数的存储与还原。毕竟我们需要给用户提供高质量且快速的服务，通过对模型参数的存储与还原，既能保留下高精度的优质参数，又避免了每次重复构建模型的时间浪费，相关函数为 tf.train.Saver() ; 
+	> 注意：<br />
+	1、此步中对输入图片的读取以及返回预测值是最基本的，我认为还需要做到的是对模型参数的存储与还原。毕竟我们需要给用户提供高质量且快速的服务，通过对模型参数的存储与还原，既能保留下高精度的优质参数，又避免了每次重复构建模型的时间浪费，相关函数为 tf.train.Saver() ;<br />
 	2、还有一个在实现过程中可能会遇到的问题就是我们的项目需要能够多次提交图片进行数字识别即多次调用此数字识别函数，第一次调用成功第二次却失败了，我当时检查到的错误原因就是每次运行此函数时函数中参数都会被重新定义，且为了避免重名其会自动重命名，而重命名的参数并无法在储存的参数文件中找到对应值，故出现错误，如有此情况可以了解下用于清除默认图形堆栈并重置全局默认图形的函数 tf.reset_default_graph() 。
 
 - 用Flask实现提供数字识别功能的网站，因为Flask是使用Python编写的web微框架，所以这个网站的核心功能我们已经在上一步实现了，此步所需要做的就是理解Flask并构建我们所需的网站框架。
@@ -22,7 +22,7 @@
 
 	> 注意：
 	
-最后对个人提交成果进行一个小小的标注：
+最后对个人提交成果进行一个小小的标注：<br />
 容器相关: Dockerfile, app.py, requirements.txt<br />
 Flask相关: app.py, templates(网页模板), static(上传图片存放处)<br />
 手写数字识别功能相关(参考[mnist_deep.py](https://github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/mnist/mnist_deep.py)): deep_run.py, deep_model_variable<br />
