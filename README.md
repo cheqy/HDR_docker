@@ -23,7 +23,7 @@
 	> 注意：
 	
 最后对个人提交成果进行一个小小的标注：
-容器相关: Dockerfile, app.py, requirements.txt
-Flask相关: app.py, templates(网页模板), static(上传图片存放处)
-手写数字识别功能相关(参考[mnist_deep.py](https://github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/mnist/mnist_deep.py)): deep_run.py, deep_model_variable 
+容器相关: Dockerfile, app.py, requirements.txt<br />
+Flask相关: app.py, templates(网页模板), static(上传图片存放处)<br />
+手写数字识别功能相关(参考[mnist_deep.py](https://github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/examples/tutorials/mnist/mnist_deep.py)): deep_run.py, deep_model_variable<br />
 大数据存储功能相关: cassandra_run.py
