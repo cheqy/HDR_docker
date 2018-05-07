@@ -16,11 +16,11 @@
 
 - 把前两步完成的内容放在Docker里实现。
 
-	> 注意：其实实现过程比较简单，
+	
 
 - 通过Docker方式将Cassandra容器拉到本地运行起来，将网页中用户每次提交的图片、识别的结果和时间戳信息都记录到Cassandra以内。
 
-	> 注意：
+	
 	
 最后对个人提交成果进行一个小小的标注：<br />
 容器相关: Dockerfile, app.py, requirements.txt<br />
